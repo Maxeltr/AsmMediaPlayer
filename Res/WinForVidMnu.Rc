@@ -1,0 +1,52 @@
+#define IDM_MENU 10000
+#define IDM_OpenFile 10007
+#define IDM_AddFileToPL 10008
+#define IDM_AddFolderToPL 10009
+#define IDM_FILE_EXIT 10001
+#define IDM_Options 10004
+#define IDM_SaveVideoRatio 10005
+#define IDM_ChangeWindowSize 10006
+#define IDM_HideVideo 10011
+#define IDM_NoScrollCaption 10010
+#define IDM_HELP_ABOUT 10101
+#define IDM_Help 1205
+#define IDM_Window 10012
+#define IDM_HideInTray 1100
+#define IDM_TOPMOST 10002
+#define IDM_TurnOffMonitor 1200
+#define IDM_Colour 1201
+#define IDM_ColourStandart 1204
+#define IDM_ColourSilver 1203
+IDM_MENU MENUEX
+BEGIN
+  POPUP "Файл"
+  BEGIN
+    MENUITEM "Открыть файл                  O",IDM_OpenFile
+    MENUITEM "Добавить файл в плейлист",IDM_AddFileToPL
+    MENUITEM "Добавить папку в плейлист",IDM_AddFolderToPL
+    MENUITEM "Выход                       Esc",IDM_FILE_EXIT
+  END
+  POPUP "Настройки",IDM_Options
+  BEGIN
+    MENUITEM "Сохранять пропорции видео",IDM_SaveVideoRatio
+    MENUITEM "Изменять размер окна под видео",IDM_ChangeWindowSize
+    MENUITEM "Скрывать видеоокно если аудио",IDM_HideVideo
+    MENUITEM "Не прокручивать заголовок",IDM_NoScrollCaption
+  END
+  POPUP "Помощь"
+  BEGIN
+    MENUITEM "About",IDM_HELP_ABOUT
+    MENUITEM "Help",IDM_Help
+  END
+  POPUP "Окно",IDM_Window,0x00004000
+  BEGIN
+    MENUITEM "Скрывать в трее",IDM_HideInTray
+    MENUITEM "Всегда сверху",IDM_TOPMOST,0x00004200
+    MENUITEM "Выключить монитор",IDM_TurnOffMonitor
+    POPUP "Цвет",IDM_Colour,0x00004000
+    BEGIN
+      MENUITEM "Стандартный",IDM_ColourStandart
+      MENUITEM "Серебристый",IDM_ColourSilver
+    END
+  END
+END

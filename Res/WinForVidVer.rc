@@ -1,0 +1,22 @@
+#define VERINF1 1
+VERINF1 VERSIONINFO
+FILEVERSION 25,6
+PRODUCTVERSION 25,6
+FILEOS 0x00040004
+FILETYPE 0x00000001
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "04190000"
+    BEGIN
+      VALUE "FileVersion", "25.6\0"
+      VALUE "FileDescription", "Ìוהטא ןכויונ\0"
+      VALUE "LegalCopyright", "(ס) Max\0"
+      VALUE "ProductVersion", "25.6\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0419, 0x0000
+  END
+END
